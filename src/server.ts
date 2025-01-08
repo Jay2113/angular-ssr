@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import bootstrap from './main.server';
 
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
-const browserDistFolder = resolve(serverDistFolder, '../browser');
+const browserDistFolder = resolve(serverDistFolder, '../../static');
 const indexHtml = join(serverDistFolder, 'index.server.html');
 
 const app = express();
